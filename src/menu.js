@@ -19,11 +19,11 @@ export default function menu() {
 
     let d3 = document.createElement('div');
     d3.setAttribute('class', 'dish');
-    d3.textContent = "Dessert";
+    d3.textContent = "Desserts";
 
     let d4 = document.createElement('div');
     d4.setAttribute('class', 'dish');
-    d4.textContent = "Drink";
+    d4.textContent = "Drinks";
 
     dishes.append(d1, d2, d3, d4);
 
