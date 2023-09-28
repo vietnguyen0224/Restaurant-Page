@@ -23,7 +23,7 @@ export default function menu() {
 
     let d4 = document.createElement('div');
     d4.setAttribute('class', 'dish');
-    d4.textContent = "Drinks";
+    d4.textContent = "Drink";
 
     dishes.append(d1, d2, d3, d4);
 
