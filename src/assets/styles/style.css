@@ -1,0 +1,109 @@
+@font-face {
+    font-family: 'Hover';
+    src: url('../fonts/scary_halloween/Scary_Halloween_Font.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'MyFont';
+    src: url('../fonts/spoky_spider/Spoky\ Spiders.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --brown: rgba(165, 42, 42, 0.827);
+    --blue: rgba(12, 119, 180, 0.271);
+    --skyBlue: rgba(162, 206, 221, 0.356);
+}
+
+body {
+    color: var(--brown);
+    max-width: 50rem;
+    margin: 0 auto;
+    height: 100%;
+    text-align: center;
+    font-family: 'MyFont', sans-serif;
+    background-image: url('../images/realistic-halloween-cobweb-background/5857937.jpg');
+    background-size: cover;
+}
+
+#navBar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    /*background: url('../images/realistic-halloween-cobweb-background/5857937.jpg');
+    background-size: cover;
+    background-repeat: repeat-x;*/
+    padding: 2em;
+    padding-bottom: 0;
+}
+
+button {
+    font-size: 1rem;
+    color: var(--brown);
+    border: 1px solid;
+    border-radius: 8px;
+    padding: 10px;
+    font-family: 'MyFont', sans-serif;
+}
+
+button:hover, .dish:hover {
+    cursor: url(../icons/ghost.cur), auto;
+    font-family: 'Hover';
+    font-size: 2em;
+}
+
+.dish:hover {
+    font-size: 2.5em;
+}
+
+h1 {
+    font-size: 3em;
+}
+
+#emphasize {
+    font-family: 'Hover';
+    font-size: 2rem;
+}
+
+.menu-container {
+    position: relative;
+    padding-top: 100%;
+    border-radius: 6px;
+    background-color: var(--blue);
+    width: 50%;
+    margin: 0 auto;
+    margin-bottom: 1rem;;
+}
+
+.dishes {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: 0.5rem;
+    
+    display: grid;
+    grid-template-rows: repeat(2, minmax(5px, 1fr));
+    grid-template-columns: repeat(2, minmax(5px, 1fr));
+    grid-gap: 0.5rem;
+    border-radius: 6px;
+}
+
+.dish {
+    position: relative;
+    border-radius: 4px;
+    background-color: var(--skyBlue);
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
