@@ -19,7 +19,7 @@ export default function menu() {
 
     let d3 = document.createElement('div');
     d3.setAttribute('class', 'dish');
-    d3.textContent = "Desserts";
+    d3.textContent = "Dessert";
 
     let d4 = document.createElement('div');
     d4.setAttribute('class', 'dish');
